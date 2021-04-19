@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+  {% block body %}
+    <div class="jumbotron">
+      <h1 class="display-4" align="center">TAPK MŪSŲ DALIMI,</h1>
+      <p class="lead" align="center">kad geriau suvoktum save ir savo kompaniją!</p>
+      <hr class="my-4">
+      {% if session.logged_in == NULL %}
+      <h1 align="center"> <a href="/register" class="btn btn-primary btn-lg" >UŽSIREGISTRUOK JAU DABAR</a></h1>
+	    <h5 align="center"><a href="/login"> <font color="#000000" ><b><u>Jau esi prisiregistravęs?</b></u></font></a></h5>
+      {% endif %}
+    </div>
+{% endblock %} 

@@ -1,0 +1,55 @@
+{% extends 'layout-admin.html' %}
+{% block body %}
+	<a class="list-group-item list-group-item-action list-group-item-info">
+    	<h1 align="center"><span class="label label-info">Įkelti darbuotojus</span></h1>
+		<br>
+	</a>
+	<br>
+  	<a class="list-group-item list-group-item-action list-group-item-warning">
+   	<h1> <span class="label label-warning">Pirmas žingsnis:</span></h1>
+	<h3>Atsisiųskite excell formą ir užpildykite ją duomenimis.</h3>
+	<br>
+	</a>
+	<br>
+   	<button ng-show='downloadReportview' data-toggle="modal"  class="btn btn-info glyphicon glyphicon-download btn-lg">
+   	<a href="/settings/download"  download><font color="#FFFFFF">Atsisiųsti excell formą</font></a>
+   	</button>
+   	<br>
+   	<br>
+   	<br>
+   	<a class="list-group-item list-group-item-action list-group-item-warning">
+	   	<h1> <span class="label label-warning">Antras žingsnis:</span></h1>
+	   	<h3>Įkelkite užpildytą excell formą ir paspauskite mygtuką "Įkelti".</h3>
+	   	<br>
+	</a>
+	<br>
+	<p>
+		{% with messages = get_flashed_messages() %}
+	  	{% if messages %}
+			<ul class=flashes>
+				{% for message in messages %}
+		  		<li>{{ message }}</li>
+				{% endfor %}
+			</ul>
+	  	{% endif %}
+		{% endwith %}
+	</p>
+	
+	
+	<form method="post" action="/settings/upload_file" enctype="multipart/form-data">
+	<div class="input-group">
+  <div class="custom-file">
+  <p>
+    <input type="file" name="file" class="custom-file-input" id="inputGroupFile04">
+    <label class="custom-file-label" for="inputGroupFile04">Pasirinkite failą</label>
+	</p>
+  </div>
+  <div class="input-group-append">
+  <p>
+	<button class="btn btn-info" type="submit">Įkelti</button>
+	</p>
+  </div>
+</div>
+</form>
+	
+{% endblock %} 

@@ -1,0 +1,57 @@
+{% extends 'layout-manager.html' %}
+
+ {% block body %}
+ <div class="jumbotron">
+		<h2 class="display-4" align="center">Anketa {{name}} {{date}}</h2>
+		{% if a1_avg %}		  
+		<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Psichologinė sauga</th>
+          <th scope="col">Patikimumas</th>
+          <th scope="col">Struktūra ir aiškumas</th>
+          <th scope="col">Reikšmė</th>
+          <th scope="col">Poveikis</th>
+          <th scope="col">Produktyvumas (pagal darbuotoją)</th>
+		   <th scope="col">Produktyvumas (pagal vadovą)</th>
+		    <th scope="col">Tikslų pasiekimas (pagal darbuotoją)</th>
+			 <th scope="col">Tikslų pasiekimas (pagal vadovą)</th>
+        </tr>
+      </thead>
+	  <br>
+    
+    <tr>
+        <td> {{a1_avg}}</td>
+        <td>{{a2_avg}}</td>
+        <td>{{a3_avg}}</td>
+        <td>{{a4_avg}}</td>
+        <td>{{a5_avg}}</td>
+		
+		<td>{{b1_avg}}</td>
+		<td>{{b1_m_avg}}</td>
+		<td>{{b2_avg}}</td>
+		<td>{{b2_m_avg}}</td>
+
+    </tr>
+	</table> 
+	  <h5 style="color:red;"> {{d1}}</h5>
+   <h5 style="color:red;"> {{d2}}</h5>
+   <h5 style="color:red;"> {{d3}}</h5>
+    <h5 style="color:red;"> {{d4}}</h5>
+	 <h5 style="color:red;"> {{d5}}</h5>
+	<br>
+	
+	<h2 class="display-4" align="center">Grįžtamasis ryšys</h2>
+<hr>
+	<h4>Darbuotojas: {{f1}}</h4>
+	<h4>Vadovas: {{f2}}</h4>
+
+   {% endif %}	
+
+		  
+		</div>
+	  </div>
+
+ 
+
+{% endblock %} 

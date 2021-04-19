@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+ {% block body %}
+ <div class="jumbotron">
+		<h2 class="display-4" align="center">Mano rezultatai</h1>
+{% if b1_avg %}	
+		   
+		   
+		   		<table class="table table-striped">
+    <thead>
+        <tr>
+
+          <th scope="col">Produktyvumas (pagal mane)</th>
+		   <th scope="col">Produktyvumas (pagal vadovą)</th>
+		    <th scope="col">Tikslų pasiekimas (pagal mane)</th>
+			 <th scope="col">Tikslų pasiekimas (pagal vadovą)</th>
+        </tr>
+      </thead>
+	  <br>
+    
+    <tr>
+
+		
+		<td>{{b1_avg}}</td>
+		<td>{{b1_m_avg}}</td>
+		<td>{{b2_avg}}</td>
+		<td>{{b2_m_avg}}</td>
+
+    </tr>
+   
+  
+  </table>
+   <h2 class="display-4" align="center">Individualios anketos</h2>
+		  <table class="table table-striped">
+    <thead>
+        <tr>
+		<th scope="col">ID</th>
+          <th scope="col">Darbuotojas</th>
+          <th scope="col">Vadovas</th>
+          <th scope="col">Darbuotojas atsakė</th>
+          <th scope="col">Vadovas atsakė</th>
+          <th scope="col">Anketos data</th>
+          <th scope="col">Veiksmai</th>
+        </tr>
+      </thead>
+	  <br>
+	  
+    {% for q in qd%}
+    <tr>
+	<td>{{q.id}}</td>
+        <td>{{q.employee_email}}</td>
+        <td>{{q.manager_email}}</td>
+        <td>{{q.employee_done}}</td>
+        <td>{{q.manager_done}}</td>
+        <td>{{q.start_date}}</td>
+		<td><a href="/my/results/questionaire?id={{q.id}}" class="btn btn-warning btn-xs" >PERŽIŪRĖTI</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+		  {% else %}
+		   	<h3><span class="label label-info">Nėra rezultatų</span></h3>
+
+		  {% endif %}
+	  </div>
+	   
+{% endblock %} 

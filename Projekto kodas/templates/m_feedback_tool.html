@@ -1,0 +1,13 @@
+{% extends 'layout-manager.html' %}
+
+{% block body %}
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="display-4" align="center"><span class="label label-info">PERŽIŪRĖTI ANKETOS KLAUSIMUS</span></h1>
+  <hr class="my-4">
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="" style="margin-left: 1%;margin-right: 1%;">
+  <p><input type="submit" class="btn btn-primary" name="submit_button" value="Išsiųsti anketą savo komandai"></p>
+</form>
+</div>
+
+{% endblock %}

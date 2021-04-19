@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+ {% block body %}
+	<div class="jumbotron jumbotron-fluid">
+		<h1 class="display-4" align="center"><span class="label label-info">Anketa</span></h1>
+		<hr class="my-4">
+		{% from "includes/_formhelpers.html" import render_field %}
+  		<form method="POST" action="" style="margin-left: 1%;margin-right: 1%;">
+    		{% for q in questions_a%}
+			{% endfor %}
+	 			<h4><span class="label label-warning">{{questions_a[0].question}}</span></h4>
+				<div class="rangeslider"> 
+					<input type="range" class="custom-range" name="a1" min="1" max="6" step="1" style="padding-right: 75%;">
+					<p><b>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 6 </b></p>
+				</div>
+				<hr class="my-4">
+				<h4><span class="label label-warning">{{questions_a[1].question}}</span></h4>
+				<div class="rangeslider"> 
+						<input type="range" class="custom-range" name="a2" min="1" max="6" step="1" style="padding-right: 75%;">
+					<p><b>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 6 </b></p>
+				</div>
+				<hr class="my-4">
+				<h4><span class="label label-warning">{{questions_a[2].question}}</span></h4>
+				<div class="rangeslider"> 
+						<input type="range" class="custom-range" name="a3" min="1" max="6" step="1" style="padding-right: 75%;">
+					<p><b>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 6 </b></p>
+				</div>
+				<hr class="my-4">
+				<h4><span class="label label-warning">{{questions_a[3].question}}</span></h4>
+				<div class="rangeslider"> 
+						<input type="range" class="custom-range" name="a4" min="1" max="6" step="1" style="padding-right: 75%;">
+					<p><b>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 6 </b></p>		
+				</div> 
+				<hr class="my-4">
+				<h4><span class="label label-warning">{{questions_a[4].question}}</span></h4>
+				<div class="rangeslider"> 
+						<input type="range" class="custom-range" name="a5" min="1" max="6" step="1" style="padding-right: 75%;">
+					<p><b>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 6 </b></p>
+				</div> 
+				<hr class="my-4">
+			{% for q in questions_b%}
+			{% endfor %}
+	 			<h4><span class="label label-warning">{{questions_b[0].question}}</span></h4>
+				<div class="rangeslider"> 
+						<input type="range" class="custom-range" name="b1" min="1" max="6" step="1" style="padding-right: 75%;"> 
+					<p><b>★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ </b></p>
+				</div> 
+				<hr class="my-4">
+		 		<h4><span class="label label-warning">{{questions_b[1].question}}</span></h4>
+				<div class="rangeslider"> 
+						<input type="range" class="custom-range"name="b2"  min="1" max="6" step="1" style="padding-right: 75%;">
+					<p><b>★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ★ </b></p>
+				</div>
+			{% for q in questions_c%}
+	 			<h4><span class="label label-warning">{{q.question}} {{em[0]['first_name']}} {{em[0]['last_name']}}</span></h4>
+				<div class="form-group">
+           			{{render_field(form.colleague, class_="form-control")}}
+        		</div>	
+			{% endfor %}
+			{% for q in questions_d%}
+	 			<h4><span class="label label-warning">{{q.question}} </span></h4>
+				<div class="form-group">
+       				{{render_field(form.manager, class_="form-control")}}
+        		</div>		
+			{% endfor %}
+			<input id="manager_1" name="manager_1"  type="hidden" value={{main_emp['manager_email']}}>
+				<input id="a1-rev" name="a1-rev"  type="hidden" value={{questions_a[0]['reverse']}}>
+				<input id="a2-rev" name="a2-rev"  type="hidden" value={{questions_a[1]['reverse']}}>
+				<input id="a3-rev" name="a3-rev"  type="hidden" value={{questions_a[2]['reverse']}}>
+				<input id="a4-rev" name="a4-rev"  type="hidden" value={{questions_a[3]['reverse']}}>
+	        	<input id="a5-rev" name="a5-rev"  type="hidden" value={{questions_a[4]['reverse']}}>
+			<p><input type="submit" class="btn btn-primary" value="Išsaugoti"></p>
+  		</form>
+  	</div>
+	
+{% endblock %} 

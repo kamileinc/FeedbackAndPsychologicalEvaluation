@@ -1,0 +1,38 @@
+{% extends 'layout-manager.html' %}
+
+ {% block body %}
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4" align="center"><span class="label label-info">Jūsų komandos darbuotojų informacija</span></h1>
+    <hr class="my-4">
+	{% if users %}
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th scope="col">Vardas</th>
+            <th scope="col">Pavardė</th>
+            <th scope="col">El. paštas</th>
+            <th scope="col">Komanda</th>
+            <th scope="col">Vadovo el. paštas</th>
+            <th scope="col">Registracijos data</th>
+          </tr>
+        </thead>
+		
+      {% for user in users%}
+      <tr>
+          <td>{{user.first_name}}</td>
+		      <td>{{user.last_name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.team}}</td>
+	        <td>{{user.manager_email}}</td>
+          <td>{{user.start_date}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+	{% endif %}
+	
+	{% if not users %}
+	 <h3 align="center"><span class="label label-primary" >Nėra nei vieno darbuotojo.<span></h3>
+	{% endif %}
+  </div>
+<br>
+{% endblock %} 

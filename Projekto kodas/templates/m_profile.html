@@ -1,0 +1,33 @@
+{% extends 'layout-manager.html' %}
+
+ {% block body %}
+ <div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4" align="center"><span class="label label-info">Mano profilis</span></h1>
+    <hr class="my-4">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th scope="col">Vardas</th>
+            <th scope="col">Pavardė</th>
+            <th scope="col">El. paštas</th>
+            <th scope="col">Komanda</th>
+            <th scope="col">Vadovo el. paštas</th>
+            <th scope="col">Registracijos data</th>
+          </tr>
+        </thead>
+      {% for user in users%}
+      <tr>
+          <td>{{user.first_name}}</td>
+          <td>{{user.last_name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.team}}</td>
+          <td>{{user.manager_email}}</td>
+          <td>{{user.start_date}}</td>
+      </tr>
+      {% endfor %}
+    </table
+	  <h5><a href="/manager/my-profile/password"> <font color="#000000" ><b><u>Norite pakeisti slaptažodį?</b></u></font></a></h5>
+  </div>
+
+
+{% endblock %} 

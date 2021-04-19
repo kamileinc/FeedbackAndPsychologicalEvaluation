@@ -1,0 +1,29 @@
+ {% extends 'layout-admin.html' %}
+
+ {% block body %}
+   <a class="list-group-item list-group-item-action list-group-item-info">
+    <h1 align="center"><span class="label label-info">Darbuotojai </span></h1>
+<br>
+	 </a>
+<br>
+
+  {% if theuser %}
+  <form class="modal-content" method="GET" action="">
+    <div class="container bg-danger text-white">
+      <h1>Ištrinti darbuotoją {{theuser.first_name}} {{theuser.last_name}}</h1>
+      <p>Ar tikrai norite ištrinti darbuotoją {{theuser.first_name}} {{theuser.last_name}}?</p>
+
+      <div class="clearfix">
+        
+        <a href="/admin/employees" class="btn btn-light btn-xs" >Atšaukti</a>
+        <a href="/admin/employees?delete={{theuser.email}}" class="btn btn-light btn-xs" >Taip</a>
+        
+      </div>
+    </div>
+    <br>
+  </form>
+{% endif %}
+<br>
+
+
+  {% endblock %}

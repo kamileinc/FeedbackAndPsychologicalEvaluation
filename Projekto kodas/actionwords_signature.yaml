@@ -1,0 +1,603 @@
+---
+- name: a global administrator named "p1"
+  uid: 23fd9841-2974-4adf-a4bb-48fb2b0816e1
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: a blog named "p1"
+  uid: 65a669a8-ba4c-40eb-b8cd-0fe9dd283b45
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: a customer named "p1"
+  uid: f8767254-c8fa-43c4-9a6a-efa04c14e5ca
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: a blog named "p1" owned by "p2"
+  uid: 8d6fee17-c51e-4fb6-8bf0-b12423bd17a3
+  parameters:
+  - name: p1
+  - name: p2
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I am logged in as Dr. Bill
+  uid: 22ae2019-c826-4e9d-a4ed-74a48938a35a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I try to post to "p1"
+  uid: 867f19c7-0567-405d-87b1-ad78d60d7977
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see "p1"
+  uid: 76af6e7d-a7cd-45a4-8bef-0c83805f9b1c
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I am logged in as Greg
+  uid: 737ea625-94cc-48d7-94d2-0173e17a4bcf
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: el. pašto adresu “test@email.com” 
+  uid: f65683ad-eebd-42fc-886a-a01a28168f25
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: slaptažodžiu “123456”
+  uid: 98672dcd-2f76-4265-96db-036c7ab68315
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: atnaujino informaciją
+  uid: dd5b164a-99e5-462e-b652-da746f97b8b7
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudė mygtuką “Atnaujinti informaciją” 
+  uid: 1f37088d-31bd-4643-86de-54c4acc66f53
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: profilio keitimo langas
+  uid: c12c99a9-3893-49e4-b336-132738c4d05f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: vartojas palieka nekeistą kompanijos pavadinimo lauką
+  uid: 5ec1839b-b9bc-4af4-994c-c9a6a7e6a004
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: palieka nekeistą el. pašto lauką
+  uid: b4f04070-57c4-42cc-9b9e-a5c71ac6b2a2
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką “Atnaujinti informaciją”
+  uid: 46dbcc82-5ad1-4990-8c9d-7608c3e1507e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: perkraunamas profilio keitimo puslapis su pranešimu “Duomenys išliko tokie
+    pat”
+  uid: d2856c15-ff8a-488b-af80-9fc3fcd2c3ef
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: vartotojas pakeičia kompanijos pavadinimą į “test1”
+  uid: 6750ad92-cce8-4ec5-9e2e-2041ef74aea3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas prisijungimo puslapis su pranešimu “Sėkmingai atnaujinta informacija,
+    prisijunkite iš naujo”.
+  uid: 98d2ae6e-7827-4365-9d51-2f0b1ba5e25f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: profilio keitimo langas.
+  uid: 270808ec-bea4-41ec-8e98-065a4bea9eb2
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: pakeičia el. paštą į “test1@gmail.com”
+  uid: 31ec4314-00d3-4ec1-9a17-e4007aa0dac3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas prisijungimo puslapis su pranešimu “Sėkmingai atnaujinta informacija,
+    prisijunkite iš naujo”
+  uid: 19478730-11b1-471e-9234-8f11493db536
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: slaptažodžio keitimo langas.
+  uid: aad7eb0f-54e1-457b-ac90-f356783ef8aa
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: vartotojas suveda dabartinį slaptažodį “123456”.
+  uid: 6d4c930c-3264-4839-8832-42eddd5bfc7b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: suveda naują slaptažodį “supersecret”.
+  uid: 7dfc1e22-cd4f-497f-a274-e44198ca093b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: pakartoja slaptažodį “supersecret”
+  uid: 556c6154-425f-43d1-8445-fe53fbde88ae
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką “Pakeisti slaptažodį”.
+  uid: 21f58023-7a9f-432e-ab91-6944ed22bba1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas prisijungimo puslapis su pranešimu “Slaptažodis sėkmingai pakeistas,
+    prisijunkite iš naujo”
+  uid: 837c13ec-386d-4898-a6c5-a8f0cc066d4c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: vartotojas nekeičia kompanijos pavadinimo lauko
+  uid: aa2e6023-2f25-406d-a41b-bc81db9f214e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: nurodo el. pašto adresą pavadinimu “testČgmail.com”
+  uid: 7caf60bb-28dc-44a4-998e-5c73fcadc963
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: po el. pašto lauku atsiranda pranešimas “El. pašto adresas neatitinka reikiamos
+    struktūros”
+  uid: bafa7416-e475-476c-aee8-2c077ab800aa
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: vartotojas pakeičia kompanijos pavadinimą į “egzistuojantis”
+  uid: 5f8378aa-a5da-4c64-80fe-a2f350ec04cb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: nekeičia el. pašto lauko
+  uid: d22debca-ea1b-449a-a951-e618f43917a9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Profilio keitimo lange atsiranda klaidos pranešimas “Kompanija su tokiu pavadinimu
+    jau yra užregistruota”
+  uid: 95ae2fff-d1ae-4738-abba-34c07cd870a4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: ji buvo išsiųsta vadovei Linai.
+  uid: f9000a17-e144-4b62-9d3d-b2612f7fab00
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: vadovo anketos pildymo langas
+  uid: 2e9a50b7-a44d-491b-b52a-fb1bd4ffe727
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Lina parenka pirmam laukui reikšmę 5
+  uid: e4a865a3-bd46-4fa0-80cd-be9c6e312d5f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: antram laukui reikšmę 6
+  uid: db83bc02-abb3-4144-bac1-0a4508d6bead
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: trečiam lauke parašo “Nuostabūs šios savaitės pasiekimai”
+  uid: 4a1fc5ee-a7c0-4768-8302-1eb17d20f351
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką “Išsaugoti”
+  uid: 40f5ea6a-f870-4835-ad6c-ff698e85a0ef
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas pagrindinis vadovo paskyros puslapis ir parašomas pranešimas “Anketa
+    sėkmingai užpildyta”
+  uid: 2eb8b1e2-06fa-4557-975f-d3fbb662a876
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: trečiam lauke parašo “Nuostabūs šios savaitės pasiekimai. Ypač patiko tavo
+    pasiūlymas pakeisti mūsų firmos darbų atlikimo tvarką. Net mano vadovė tai pastebėjo
+    ir labai pagyrė iniciatyvą. Jei kils dar kokių minčių visad lauksim tavo idėjų
+    ir bandysim jas įgyvendint. Taip pat labai noriu pagirti dėl gerų klientų įvertinimo.
+    Esi vienas iš mylimiausių darbuotojų klientų akyse. Būtų gerai, jei sutartume,
+    kada galėtum papasakoti apie tai savo kolegoms. Tačiau tikiuosi iš tavęs geresnės
+    darbo etikos. Dėl to norėčiau pasikalbėti gyvai. Planuokime susitikimą antradienį
+    15:30 mano kabinete. Jei kas keisis ar netinka mano pasiūlytas laikas, tuomet
+    galime gyvai susitart dėl kito tinkamesnio laiko. Jei tinka, tai tuomet susitiksime
+    antradienį nutartu laiku.”
+  uid: ff44ca79-b321-4f17-b240-2a7cbc72ff04
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: perkraunamas tas pats anketos pildymo puslapis ir parašomas klaidos pranešimas
+    “Atvirame lauke viršytas simbolių limitas”
+  uid: f8d509de-7d13-4b00-89c4-773ca5dab6ab
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: registracijos langas.
+  uid: 393b0df0-432f-421c-a807-68b4c68e09cb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Kompaniją bandantis priregistruoti žmogus prie Kompanijos pavadinimo lauko
+    įrašo “Kompanija A”
+  uid: d776e8ec-6d4b-4c1e-ab1d-707b37cb864a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: prie kompanijos el. pašto lauko įrašo “kompanija_a@email.com”
+  uid: ab98e86b-ca7c-449d-9a97-3b45e93bd9eb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: prie slaptažodžio lauko įrašo “kompanijaa123”
+  uid: 260a5786-17cd-4302-8420-0914043fd39e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: prie pakartokite slaptažodį lauko įrašo “kompanijaa123”
+  uid: ed5a42e5-45f9-41b5-ac31-116610f19cfb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką “užsiregistruoti”
+  uid: 4ef97b77-99a6-4583-beb9-d14d3058b6b3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas prisijungimo puslapis ir parašomas pranešimas “Užsiregistravote,
+    galite prisijungti”.
+  uid: be8a87c5-2d84-4389-bed9-051044cfee9b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: prie pakartokite slaptažodį lauko įrašo “kompanijaa12”
+  uid: 61c8a96c-88dc-40cc-bab8-909f6b136846
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas tas pats registracijos puslapis iš naujo ir parašomas pranešimas
+    “Slaptažodžiai nesutampa”.
+  uid: e60eb474-41ee-4640-8214-aa20390f8155
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Kompaniją bandantis priregistruoti žmogus prie Kompanijos pavadinimo lauko
+    įrašo “Pavyzdys”
+  uid: c143fde3-81b4-4b98-9bf6-1643f6fe8c11
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas tas pats registracijos puslapis iš naujo ir parašomas pranešimas
+    “Kompanija su tokiu pavadinimu jau yra užregistruota.”.
+  uid: 80311e7e-f5f0-4050-985d-d1761527feab
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: prie kompanijos el. pašto lauko įrašo “pvz@pvz.lt“
+  uid: f208f87e-1c4e-4b93-b26c-7803d5426d2d
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas tas pats registracijos puslapis iš naujo ir parašomas pranešimas
+    “Toks el. paštas jau yra naudojamas.”.
+  uid: 13ad7781-bb6e-484b-84d5-285e944c6ac0
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Kompaniją bandantis priregistruoti žmogus Kompanijos pavadinimo lauką palieka
+    tuščią
+  uid: e6a291e5-f1e3-4e1c-a322-36c1717b04a3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: prie kompanijos el. pašto lauko įrašo “kompanija_a@email.com“
+  uid: 7cc90772-4472-40f5-9691-519b5ed2d37c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas tas pats registracijos puslapis iš naujo ir parašomas pranešimas
+    “Kompanijos pavadinimas yra privalomas laukas.”.
+  uid: d6b79a76-e982-471c-8a24-e449c36ed9c0
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos el. pašto lauką palieka tuščią
+  uid: 693ba68d-30b0-4c00-a9c9-79b88f1a1ea9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas tas pats registracijos puslapis iš naujo ir parašomas pranešimas
+    “El. paštas yra privalomas laukas. El. pašto adresas turi susidaryti iš 6-50 simbolių.
+    El. pašto adresas neatitinka reikiamos struktūros”.
+  uid: '08a98209-8afa-435d-a89e-03e089de5b4d'
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Prisijungimo langas
+  uid: 84b47939-e874-4dcf-9008-554d208e9d06
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas pirmame lauke įrašo “antanas.antanaitis@email.com”
+  uid: ab76c931-58fa-4be9-a79d-76960bde2af5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas antrame lauke įrašo “antanas123”
+  uid: a6efc081-2187-45c0-b1d7-bff94a3a47c4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką “prisijungti”.
+  uid: da05016d-893b-4235-843f-58c3a7e1fed8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas prisijungia prie sistemos
+  uid: d73beefe-ee4f-44e9-8e74-5d60d7e39d39
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas slaptažodžio lauke įrašo “juozas123”
+  uid: e66ecdc3-d370-4aef-ba2e-f740aed7b19a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas tas pats prisijungimo puslapis iš naujo
+  uid: 8600a25c-a66c-4a15-ae2c-f2378ae15c53
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: parodomas klaidos pranešimas “Neteisingas prisijungimas”.
+  uid: a8c8649a-7944-47cd-8ac6-f956d45cee9c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: mato darbuotojo paskyros pagrindinį puslapį.
+  uid: c31b991c-d62f-47d9-8d6f-55c84bb2ddff
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas el. pašto lauką palieka tuščią
+  uid: df614a48-bc65-4ca1-9ca8-a77b90d6f9e1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanui parodomas pranešimas „El. paštas laukas yra neužpildytas“.
+  uid: 1a7a849e-e6df-4b3d-9701-ad1551f11b58
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas slaptažodžio lauke įrašo “antanas123”
+  uid: a673cdef-eef7-417f-a85d-f468777ca6f3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas el. pašto lauke įrašo “antanas.antanaitis@email.com”
+  uid: 7d2e4857-b800-41e6-aa40-b9bba003a3d9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas slaptažodžio lauką palieka tuščią
+  uid: 31b0dcaa-69f5-460a-83cf-5692d7745cc2
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanui parodomas pranešimas „Slaptažodis laukas yra neužpildytas“.
+  uid: 6cd7dc1e-42ad-4c8b-9ed0-25305cd52877
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Anketos pildymo langas
+  uid: e6fd34e8-f409-47d3-b7f5-aafa09e12da1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Darbuotojas pirmo klausimo atsakymui pasirinka reikšmę 3
+  uid: a78e64d1-391f-4702-bbbe-6b5a40153ed6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: antro klausimo atsakymui pasirinka reikšmę 4
+  uid: fbadbe18-4713-403a-8b25-ce9f3ab5ece2
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: trečio klausimo atsakymui paserinka reikšmę 5
+  uid: 4283fa23-5ae5-443a-b46d-177bfb13d11d
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: ketvirto klausimo atsakymui pasirinka reikšmę 6
+  uid: 68a96b87-328f-402d-88b7-888e975e5b08
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: penkto klausimo atsakymui pasirinka reikšmę 5
+  uid: d5147823-a4d3-4e65-ae8c-53cd8f05d1d1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: šešto klausimo atsakymui pasirinka reikšmę 4
+  uid: e1c651df-62fd-4ccc-b997-e9d9a89ed361
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: septinto klausimo atsakymui pasirinka reikšmę 3
+  uid: 1c63db57-1f15-49d5-abdb-0e2c8eb9217f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: aštunto klausimo atsakymo lauke parašo “Viskas okay”
+  uid: 991281aa-c9b6-49cd-8a24-cbb3479b21ea
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką “Išsaugoti”.
+  uid: 0f6731dd-c880-497a-b63b-42df44cc078a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Atidaromas pagrindinis darbuotojo paskyros langas
+  uid: 15521cb8-827f-4c97-9af4-0f473d9fb247
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Darbuotojas pirmo klausimo atsakymui pasirenka reikšmę 3
+  uid: e54385af-6773-4d50-a9b3-500ffb2fffc8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: antro klausimo atsakymui pasirenka reikšmę 4
+  uid: cbfe28eb-16a5-4474-b77b-1c5ed4cd975c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: trečio klausimo atsakymui pasirenka reikšmę 5
+  uid: 4d0ee1c1-849c-4d54-a235-5cf8fd6789c1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: ketvirto klausimo atsakymui pasirenka reikšmę 6
+  uid: 7c3c9ef3-0a45-40a8-91e2-57f41f12a83f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: penkto klausimo atsakymui pasirenka reikšmę 5
+  uid: 88c911a9-c9fc-4d4a-8e23-a49d09eff587
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: šešto klausimo atsakymui pasirenka reikšmę 4
+  uid: bf06ac5b-172c-48f0-9494-1337abbb3962
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: septinto klausimo atsakymui pasirenka reikšmę 3
+  uid: e1cb6964-5686-4b9f-a900-1eb7b57df4af
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: aštunto klausimo atsakymo lauke parašo “Kaip žmogus tu, vadove mano, gal ir
+    esi gan normalus, bet ir tai yra didelis bet, kaip vadovas tu man nepatinki. Tikriausia
+    dabar kyla klausimas kodėl? Na aš tau atsakysiu į šį klausimą daugiau netemdamas
+    laiko. Manau, kad tu manęs, kaip darbuotojo, visai nevertini. Kaip tai pasireiškia?
+    Į šį klausimą yra labai lengvas atsakymas. Aš žinau, kad tu prisimeni, kaip prieš
+    apytiksliai 3 mėnesius, o tiksliai prieš 97 dienas, kaip aš tau atnešiau savo
+    darbo ataskaitą tu man nepasakei ačiū. Ar taip galima elgti? Ne...”.
+  uid: 227fa0fc-c8c6-45c0-bc38-fa554d6a23dd
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Perkraunamas tas pats anketos pildymo puslapis
+  uid: 927e8218-c4a4-493e-b35f-083333ef846a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: parodomas klaidos pranešimas “Atvirame lauke viršytas simbolių limitas”.
+  uid: 9f555b63-1c8a-4a67-82a9-5e3d3382053c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: parodomas pranešimas “Anketa sėkmingai užpildyta”.
+  uid: b40f7d76-0bff-4b73-96b5-6bf7c529f21e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Darbuotojas Antanas yra priregistruotas vartotojas
+  uid: deb821eb-682f-4e9c-8c53-cecdad698959
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: jo el. pašto adresas yra “antanas.antanaitis@email.com”
+  uid: 4e7eff43-5f53-45b5-bc17-756c19e91426
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: slaptažodis yra “antanas123”
+  uid: 5e420502-d2b7-4af1-8243-cc2e983fc576
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: sistemoje priregistruota kompanija su pavadinimu “test” 
+  uid: cc39412b-aca8-4062-8667-7220cefe28c4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Darbuotojui jo komandos vadovas atsiuntė anketą
+  uid: 69a59510-5bb2-4ab6-b56d-310ba2f94dd6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Darbuotojas paliko įmonę arba buvo atleistas ir jo priėjimas prie sistemos
+    turi būti panaikintas
+  uid: e956bb69-460a-48b9-8687-2791a7c4a45b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: sistemoje prisijungta kaip kompanija
+  uid: 518ec33f-b1b5-44e8-8a92-09cd713fcf0a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: įmonės darbuotojų sąrašo puslapis
+  uid: 51ac7202-d18a-490b-a5f8-419c868e8073
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Surandamas Vartotojas, kuris nėra vadovas, kuris turi būti panaikintas
+  uid: e0c1c744-47ef-46ef-8f6a-49a61712b27f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžiamas mygtukas “DELETE”
+  uid: 91f415d4-1b5c-4e34-ae9a-cf809c52a1a4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: patvirtinimo langle paspaudžiamas mygtukas “OK”
+  uid: 3983d9e7-0fec-46e4-a31d-6d2263a9c03e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Parodomas Darbuotojų sąrašo puslapis su pranešimu kad vartotojas buvo sėkmingai
+    panaikintas
+  uid: 873e6f5c-b47d-436f-a660-a978a59671bd
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Surandamas Vartotojas kuris turi būti panaikintas
+  uid: 886e1c88-058d-4078-bf31-f275f2124743
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: patvirtinimo langle paspaudžiamas mygtukas “Cancel”
+  uid: 86aab578-ef43-4ea5-864d-71014169df97
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Perkraunamas Darbuotojų sąrašo puslapis be jokių pakeitimų
+  uid: 75497de8-1291-4982-9997-016bc62a0b20
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Surandamas Vartotojas su vadovo statusu, kuris turi būti panaikintas
+  uid: d8466a28-7cbd-45e1-bbc5-d412c76fea88
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Parodomas Darbuotojų sąrašo puslapis su pranešimu “Darbuotojas turi pavaldinių,
+    todėl jo negalima ištrinti”
+  uid: 1e5edfe9-2824-475d-b060-22dcbe4f73be
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Darbuotojas Antanas užpildė anketą
+  uid: 859e83ca-23af-4256-aeed-580e4b9373ee
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Dar sistemoje nepriregistruota kompanija bando priregistruoti savo kompaniją
+    prie sistemos.
+  uid: fd2f5873-3e41-4bb2-b5bb-b63182d62a33
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: slaptažodžio keitimo puslapis pavadinimu "p1".
+  uid: 0c21998e-0909-4b09-b41e-d3c002c64248
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas lauke “Dabartinis slaptažodis” įveda dabar egzistuojantį slaptažodį
+  uid: e48dc487-4f61-4615-a68b-d39d386c5ebc
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: lauke „Naujas slaptažodis“ jis įveda naują, sugalvotą slaptažodį,
+  uid: 4ff3b88f-1aa7-414a-a325-4e7992ccb4cd
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: lauke „Pakartokite naują slaptažodį“ Antanas pakartoja naują slaptažodį
+  uid: 28118948-4228-4a43-a76a-69d2ed96fc12
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: paspaudžia mygtuką "p1"
+  uid: 478f9692-aad3-4d9b-b374-bff3714f199c
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: užkraunamas prisijungimo puslapis ir darbuotojas yra raginamas vėl prisijungti
+    su nauju, pakeistu slaptažodžiu, bei virš prisijungimo formos yra pranešimas „Slaptažodis
+    sėkmingai pakeistas, prisijunkite iš naujo“.
+  uid: 4d0069e3-2a8a-4fca-83d4-bdf61e747076
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas lauke “Dabartinis slaptažodis” įveda dabar egzistuojantį, bet neteisingą
+    slaptažodį
+  uid: 82b5a881-080b-47a8-963b-b0f5c4950ab5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: lauke „Naujas slaptažodis“ jis įveda naują, sugalvotą slaptažodį
+  uid: 0dfcce1b-b22c-41c9-a4a7-d2c9a42e00f5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Antanas pasilieka tame pačiame puslapyje „Keisti slaptažodį“ ir nėra peradresuojamas
+    į prisijungimo puslapį, bei atsiranda pranešimas „Slaptažodis įvestas neteisingai“.
+  uid: c3eb246f-94f3-4116-b735-239fab6384f8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: lauke „Pakartokite naują slaptažodį“ Antanas neteisingai pakartoja naują slaptažodį
+  uid: d7885e38-784f-4e67-858f-234c9b000689
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: lauke „Naujas slaptažodis“ jis įveda naują, sugalvotą slaptažodį, bet slaptažodyje
+    nepasiektas minimalus slaptažodžio simbolių kiekis
+  uid: 0ab9e8e4-3b10-4e3c-8266-19ac6b0660fb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: puslapis pavadinimu "p1".
+  uid: 0b58d558-053b-4731-8f93-ec7958e18605
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos vadovas lauke „Vardas“ pakeičia vartotojo vardą iš „Jonasss“ į
+    „Jonas“
+  uid: ae1a2036-1b64-4a81-b2df-8cc5c0a79275
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos vadovas patenka į darbuotojų sąrašo puslapį ir pamato, kad darbuotojo
+    vardas yra pakeistas į "p1", bei viršuje atsiranda pranešimas „Sėkmingai atnaujinta
+    informacija“.
+  uid: 8bc625d4-6748-481b-aac0-969e20667b00
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos vadovas lauke „El.paštas“ pakeičia vartotojo paštą iš „jonas.jonaitis@gmail.com“
+    į „j.jonaitisgmail.com“
+  uid: 7473cb34-f6a7-4cd4-b30a-7d12a7dbc2f5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos vadovui užkraunamas tas pats "p1" puslapis iš naujo ir po lauko
+    “El.paštas” atsiranda pranešimas “El.pašto adresas neatitinka reikiamos struktūros”.
+  uid: c52518aa-e420-4ade-8fda-33123b86a306
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos vadovas lauke „Vardas” ištrina seną vardą ir paskui pamiršta užpildyti
+    vardo lauką
+  uid: 5e8fe54a-bae6-40c5-a9e3-6e579ec1c479
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: kompanijos vadovui užkraunamas tas pats "p1" puslapis iš naujo ir po lauko
+    “Vardas” atsiranda pranešimas “Vardas turi susidaryti iš 1-60 simbolių”.
+  uid: 2717b37e-c2a4-4e8e-b07a-aa237577cd18
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e

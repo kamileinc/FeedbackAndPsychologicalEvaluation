@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+ {% block body %}
+ <div class="jumbotron">
+		<h2 class="display-4" align="center">Anketa {{date}}</h2>
+		{% if b1_avg %}		  
+		<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Produktyvumas (pagal mane)</th>
+		   <th scope="col">Produktyvumas (pagal vadovą)</th>
+		    <th scope="col">Tikslų pasiekimas (pagal mane)</th>
+			 <th scope="col">Tikslų pasiekimas (pagal vadovą)</th>
+        </tr>
+      </thead>
+	  <br>
+    
+    <tr>
+
+		
+		<td>{{b1_avg}}</td>
+		<td>{{b1_m_avg}}</td>
+		<td>{{b2_avg}}</td>
+		<td>{{b2_m_avg}}</td>
+
+    </tr>
+	</table> 
+
+	<br>
+	
+	<h2 class="display-4" align="center">Grįžtamasis ryšys</h2>
+<hr>
+	<h4>Darbuotojas: {{f1}}</h4>
+	<h4>Vadovas: {{f2}}</h4>
+
+   {% endif %}	
+
+		  
+		</div>
+	  </div>
+
+ 
+
+{% endblock %} 

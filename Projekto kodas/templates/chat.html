@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+	{% block body %}
+	<div class="jumbotron">
+			<h2 class="display-4" align="center">Grįžtamojo ryšio istorija</h1>
+			<hr class="my-4">
+			{% for q in qd%}
+      	<tr class="bg-warning">
+			<h3><span class="label label-primary"> {{q['start_date']}} </span></h3>
+			<h3><span class="label label-info"> {{q['question_c2']}} </span></h3>
+			<h3><span class="label label-warning"> {{q['question_m3']}} </span></h3>
+      	</tr>
+	  	{% endfor %}
+		</div>
+	</div> 
+		
+{% endblock %}

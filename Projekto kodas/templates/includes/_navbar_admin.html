@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container" height="200">
+    <div class="navbar-header">
+		  {% if session.logged_in %}
+        <a href="/admin"><img src="{{ url_for('static', filename='imgs/home.png') }}" width="70" height="80"></a>
+		  {% else %}
+        <a href="/"><img src="{{ url_for('static', filename='imgs/home.png') }}" width="70" height="80"></a>
+		  {% endif %}
+    </div>
+    <div id="navbar" class="collapse navbar-collapse" style="margin-left: 1%;">
+      
+      <div class="nav navbar-nav" align="center">
+		    {% if session.logged_in %}
+	
+          <a href="/admin/upload" class="btn btn-warning" style="margin-left: 10px;"><h4>Įkelti darbuotojus</h4></a>
+          <a href="/admin/employees" class="btn btn-warning" style="margin-left: 10px;"><h4>Darbuotojų sąrašas</h4></a>
+		  <a href="/admin/profile" class="btn btn-warning" style="margin-left: 10px;"><h4>Keisti profilį</h4></a>
+		  <a href="/admin/results" class="btn btn-warning" style="margin-left: 10px;"><h4>Rezultatai</h4></a>
+			  {% else %}
+			    <a href="/"><h3>Pagrindinis</h3></a>
+        {% endif %}
+        <div class="nav navbar-nav navbar-left" style="align-items: left;">
+            {% if session.logged_in %}
+              <a href="/logout" class="btn btn-outline-primary" style="margin-left: 100%;"><h4>Atsijungti</h4></a>
+            {% else %}
+              <a href="/register" class="btn btn-primary" style="margin-left: 10px;"><h3>Registruotis</h3></a>
+              <a href="/login" class="btn btn-outline-warning" style="margin-left: 10px;"><h3>Prisijungti</h3></a>
+            {% endif %}
+        </div>
+      </div>
+      
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+	
+
+	

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container" height="200">
+    <div class="navbar-header">
+		  {% if session.logged_in %}
+        <a href="/my/home"><img src="{{ url_for('static', filename='imgs/home.png') }}" width="70" height="80" style="mix-blend-mode: multiply;"></a>
+      {% else %}
+
+		  {% endif %}
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        {% if session.logged_in %}
+			    <div class="" style="font-size:0;">
+			      <img src="{{ url_for('static', filename='imgs/blankspace.png') }}" width="350" height="75" alt="" > 
+			      <a href="/my/chat"><img src="https://www.pastepic.xyz/images/2019/12/16/gr1304868fa977978aa.jpg" style="margin:0" width="90" height="75" ></a>
+			      <a href="/my/profile"><img src="https://www.pastepic.xyz/images/2019/12/16/a2dd2c9e7989dd611f.jpg" style="margin:0" width="90" height="75"></a>
+			      <a href="/my/to_do"><img src="https://www.pastepic.xyz/images/2019/12/16/a07c07f210b6a22e2.jpg" style="margin:0"width="90" height="75"></a>
+			    </div>
+        {% else %}
+          <div class="my-2 my-md-0 mr-md-3">
+            <a href="/"><img src="{{ url_for('static', filename='imgs/home.png') }}" alt="Pagrindinis" width="70" height="80"></a>
+          </div>
+			  {% endif %}
+    </div>
+    <div id="navbar" class="my-2 my-md-0 mr-md-3">
+      {% if session.logged_in %}
+        <a class="btn btn-outline-primary" href="/logout"><h3>Atsijungti</h3></a>
+      {% else %}
+        <a class="btn btn-primary" href="/register"><h3>Registruotis</h3></a>
+        <a class="btn btn-outline-primary" href="/login"><h3>Prisijungti</h3></a>
+      {% endif %}
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

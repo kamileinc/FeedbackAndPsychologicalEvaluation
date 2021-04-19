@@ -1,0 +1,31 @@
+{% extends 'layout-manager.html' %}
+
+ {% block body %}
+  <div class="jumbotron">
+    <h2 class="display-4" align="center">Pagrindinis</h1>
+    <hr class="my-4">
+    <div class="btn-toolbar"  role="toolbar" aria-label="Toolbar with button groups" align="center" >
+      <div class="container">
+        <div class="row" align="center">
+          <div class="col">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+              <a href="/manager/manage-your-team" class="btn btn-warning btn-lg">Komanda</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+              <a href="/manager/manage-feedback-tool" class="btn btn-warning btn-lg">Anketos siuntimas</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="Third group">
+              <a href="/manager/team-results" class="btn btn-warning btn-lg">Komandos Rezultatai</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %} 
